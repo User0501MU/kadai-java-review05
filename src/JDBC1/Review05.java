@@ -40,7 +40,7 @@ public class Review05 {
             // Connecionというインターフェイスは複数pkgの為、インポートの構成が必要
             // まだコンパイルエラーが出ているので、DriverManager.getConnection()メソッドは、SQLException（チェックされる例外）を発生される可能性があるためです。つまり、SQLExceptionに対応するcatchブロックを追加すればこのコンパイルエラーを解決できます。
             con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/world?useSSL=false&allowPublicKeyRetrieval=true",
+                    "jdbc:mysql://localhost/kadaidb?useSSL=false&allowPublicKeyRetrieval=true",//kadaidb?
                     "root",
                     "20240501Umonica3!!");
             // 4. DBとやりとりする窓口（Statementオブジェクト）の作成
